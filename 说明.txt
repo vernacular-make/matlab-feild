@@ -1,0 +1,44 @@
+1、andPN：两个一位数（1,0）按位与                 function c = andPN(a,b) 
+
+2、bitandPN：正数转化为byte位的01字符串 ，再与    function c = bitandPN(a,b)
+
+3、bitxorPN：正数转化为byte位的01字符串 ，再异或  function c = bitxorPN(a,b)
+
+4、change:   交换两个数                          function res = change( a,b )
+
+5、commondivisor ：求两个正整数的最大公约数       function [a] = commondivisor(a,b)
+
+---n=14个节点 k=10,r=4,d=11：
+---d-k+1 :决定几个节点相组合
+---L=floor((r-1)/(d-k)):决定L个d-k+1组节点执行一样的变换
+
+---10个数据节点 4个校验节点 （单条带符合RS编码 编码矩阵是范德蒙列矩阵 矩阵参数为 1~1; p1~p10; (p1^2)~(p10^2);(p1^3)~(p10^3)）
+---做线性变换（每两列做一次变换  变换系数为e1,e2,e3,e4,e5,e6,e7）
+---前六列两两做相同的线性变换  后六列做相同的线性变换
+   斜对角（一行间隔）         （两行间隔） 
+           
+6、D14_10_E1E2E3： 找参数E1E2E3
+   
+7、D14_10_E4E5E6： 找参数E4E5E6
+
+8、dec2binPN：     正数负数转化为byte位的01字符串  function [numbin] = dec2binPN(numdec,N) 
+
+9、divide：        有限域2^8    查表除法           function  c = divide(a,b)  
+
+10、一些公式的测试
+
+11、mul：          自己写的有限域乘法          function  [result,consequence] = mul( x1,x2)
+ 
+12、mul_finitefield：    这个乘法好像有点问题不建议使用
+ 
+13、multipy：            2^8有限域表乘法       function  c = multipy( a,b) 
+
+14、mulRANK：    2^8有限域某个方矩阵的秩        function  consequence = mulRANK(a)             
+
+15、quotient：   自己写的有限域除法             function [result,consequence] = quotient(x1,x2)
+
+16、swapRows：   交换a矩阵r1,r2行               function aNew=swapRows(a,r1,r2)
+  
+17、xorPN：      1,0按位异或                    function c = xorPN(a,b) 
+
+
